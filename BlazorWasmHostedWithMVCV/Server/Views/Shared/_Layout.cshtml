@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+     <title>GetinLine</title>
+    <link rel="stylesheet" href="~/css/LandingpageStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- 
+        This is very tricky, but since we are using blazor wasm project, the image folder and css folder in in the blazor.client project.
+        When we build the blazor wasm project, those gets copied to server side and we can reference them
+    -->
+</head>
+<body>
+    <div>
+        <h2>This is From Layout View</h2>
+        @RenderBody()
+    </div>
+   
+</body>
+</html>
